@@ -1,9 +1,9 @@
 {
   "routes": {
-    "/ITS": {},
-    "/ITS/about": {},
-    "/ITS/contact": {},
-    "/ITS/pricing": {},
-    "/ITS/services": {}
+    "/": {},
+    "/about": {},
+    "/contact": {},
+    "/pricing": {},
+    "/services": {}
   }
 }

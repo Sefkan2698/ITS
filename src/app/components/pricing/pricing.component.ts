@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-pricing',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './pricing.component.html',
-  styleUrl: './pricing.component.css'
+  styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent {
-
 }
