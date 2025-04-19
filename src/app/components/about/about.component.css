@@ -1,0 +1,43 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #007bff;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #007bff;
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ /* about.component.css */
+/* about.component.css */
+.profile-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

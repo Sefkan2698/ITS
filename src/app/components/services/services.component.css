@@ -1,0 +1,21 @@
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }

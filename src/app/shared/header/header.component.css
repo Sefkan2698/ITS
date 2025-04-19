@@ -1,0 +1,11 @@
+.navbar-brand {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    transform: scale(1.05);
+  }
+  
+  .bi-hdd-network-fill {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+  }
