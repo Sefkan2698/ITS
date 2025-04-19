@@ -11,5 +11,5 @@ import { RouterLink } from '@angular/router';
 })
 // home.component.ts
 export class HomeComponent {
-  logoPath = 'assets/Saka_IT-Solution.png';
+ 
 }
