@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/SakaIT-Solution": {},
+    "/SakaIT-Solution/about": {},
+    "/SakaIT-Solution/contact": {},
+    "/SakaIT-Solution/pricing": {},
+    "/SakaIT-Solution/services": {}
+  }
+}
