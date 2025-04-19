@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/SakaIT-Solution',
+  basePath: '/ITS',
   supportedLocales: {
   "en-US": ""
 },
