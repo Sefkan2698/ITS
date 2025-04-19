@@ -1,39 +1,54 @@
-/* home.component.css */
 .hero-section {
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    padding: 100px 0;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  padding: 100px 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.features i {
+  font-size: 2.5rem;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* Für das Logo in der Hero Section */
+.hero-logo {
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-left: auto; /* Schiebt das Bild nach rechts */
+  padding-right: 0; /* Entfernt rechten Padding */
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
   }
   
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
-  }
-  
-  .features i {
+  .display-4 {
     font-size: 2.5rem;
   }
-  
-  .btn-lg {
-    padding: 0.75rem 1.5rem;
+
+  .hero-logo {
+    max-width: 300px;
+    margin-top: 2rem;
   }
-  
-  .bg-light {
-    background-color: #f8f9fa !important;
-  }
-  
-  /* Responsive Anpassungen */
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 60px 0;
-    }
-    
-    .display-4 {
-      font-size: 2.5rem;
-    }
-  }
+}
