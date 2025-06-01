@@ -1,11 +1,12 @@
+<!-- FOOTER CODE - Ersetze deinen bestehenden Footer damit -->
 <footer class="bg-dark text-light py-4 mt-5">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <h5>Kontakt</h5>
         <p>
-          <i class="fas fa-envelope me-2"></i>{{emailAddress}}<br>
-          <i class="fas fa-phone me-2">+491741928943</i> 
+          <i class="fas fa-envelope me-2"></i>sakaits&#64;gmx.de<br>
+          <i class="fas fa-phone me-2"></i>+491741928943
         </p>
       </div>
       <div class="col-md-4">
@@ -16,6 +17,104 @@
           <li><a routerLink="/contact" class="text-light">Kontakt</a></li>
         </ul>
       </div>
+      <div class="col-md-4">
+        <h5>Service-Gebiet</h5>
+        <p>
+          <i class="fas fa-map-marker-alt me-2"></i>
+          Goch und Umgebung<br>
+          <small class="text-muted">Vor-Ort-Service im Umkreis von 20km</small>
+        </p>
+      </div>
+    </div>
+    
+    <!-- IMPRESSUM SECTION -->
+    <div class="row">
+      <div class="col-12">
+        <hr class="border-secondary">
+        <div class="impressum-section">
+          <h6 class="text-uppercase fw-bold mb-3">Impressum</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Sefkan Saka</strong></p>
+              <p class="mb-1">Voßheiderstr. 154</p>
+              <p class="mb-1">47574 Goch</p>
+              <p class="mb-1">Deutschland</p>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Kontakt:</strong></p>
+              <p class="mb-1">E-Mail: sakaits&#64;gmx.de</p>
+              <p class="mb-1">Telefon: +49 174 1928943</p>
+              <p class="mb-1"><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong></p>
+              <p class="mb-1">Sefkan Saka (Anschrift wie oben)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- COPYRIGHT -->
+    <div class="row">
+      <div class="col-12 text-center pt-3 border-top border-secondary">
+        <small class="text-muted">
+          © {{ currentYear }} Saka IT-Solutions. Alle Rechte vorbehalten.
+        </small>
+      </div>
     </div>
   </div>
 </footer>
+
+<!-- WHATSAPP FLOATING BUTTON - Füge das VOR dem schließenden </body> Tag ein -->
+
+<!-- WhatsApp Button CSS - Füge das in deine styles.css oder im <head> Bereich ein -->
+<style>
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: white;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.whatsapp-float:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+</style>
+
+<!-- WhatsApp Button HTML - Füge das VOR dem schließenden </body> Tag ein -->
+<a href="https://wa.me/491741928943?text=Hallo,%20ich%20interessiere%20mich%20für%20Ihre%20IT-Dienstleistungen" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="WhatsApp Chat">
+  <i class="fab fa-whatsapp"></i>
+</a>
