@@ -1,4 +1,4 @@
-New-Item -Path .\src -Name "robots.txt" -ItemType File -Force
+
 @'
 User-agent: *
 Allow: /
