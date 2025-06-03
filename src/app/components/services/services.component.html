@@ -1,163 +1,185 @@
-<!-- services.component.html -->
-<div class="container py-5">
-    <!-- Header Section -->
-    <div class="text-center mb-5">
-      <h1 class="display-5 fw-bold">Unsere Dienstleistungen</h1>
-      <p class="lead text-secondary">Professionelle IT-Lösungen für Privat und Business</p>
-    </div>
-  
-    <!-- Main Services -->
-    <div class="row g-4">
-      <!-- PC & Laptop Service -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-laptop fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">PC & Laptop Service</h3>
-            <p class="text-muted">
-              Professionelle Wartung und Reparatur Ihrer Computer-Systeme
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Installation & Einrichtung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Fehlerbehebung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Virenentfernung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>System-Optimierung</li>
-            </ul>
+<main class="container py-5">
+
+  <!-- Header -->
+  <header class="text-center mb-5">
+    <h1 class="display-5 fw-bold">IT-Dienstleistungen in Kamp-Lintfort & Umgebung</h1>
+    <p class="lead text-secondary">Professionelle IT-Lösungen für Privat- und Geschäftskunden</p>
+  </header>
+
+  <!-- Einleitung (SEO) -->
+  <section class="mb-4">
+    <p class="text-center text-muted">
+      <strong>Saka IT-Solutions</strong> bietet <strong>Computerhilfe, Smartphone-Support, Netzwerk-Optimierung, Datensicherung</strong>
+      und <strong>Website-Entwicklung</strong> im Raum <strong>Kamp-Lintfort, Geldern, Goch</strong>. Wir unterstützen <strong>Senior:innen</strong>
+      wie <strong>Unternehmen</strong> persönlich vor Ort oder per Fernwartung.
+    </p>
+  </section>
+
+  <!-- Leistungen -->
+  <section class="row g-4" itemscope itemtype="https://schema.org/Service">
+
+    <!-- 1 PC & Laptop Service -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="PC & Laptop Service">
+            <i class="bi bi-laptop fs-2 p-3"></i>
           </div>
-        </div>
-      </div>
-   <!-- Websiten erstellen -->
-<!-- Neuer Service-Block für Website-Entwicklung -->
-<div class="col-md-6 col-lg-4">
-    <div class="card h-100 border-0 shadow-sm">
-      <div class="card-body text-center p-4">
-        <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-          <i class="bi bi-globe fs-2 p-3"></i>
-        </div>
-        <h3 class="fs-4 fw-bold">Website-Entwicklung</h3>
-        <p class="text-muted">
-          Professionelle Webpräsenz für Ihr Unternehmen
-        </p>
-        <ul class="list-unstyled text-start">
-          <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Responsive Webdesign</li>
-          <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Modern & benutzerfreundlich</li>
-          <li><i class="bi bi-check-circle-fill text-primary me-2"></i>SEO-optimiert</li>
-          <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Content Management Systeme</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-      <!-- Smartphone & Tablet Support -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-phone fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">Smartphone Support</h3>
-            <p class="text-muted">
-              Kompetente Hilfe für alle mobilen Geräte
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Einrichtung & Konfiguration</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Datenübertragung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Software-Updates</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Problembehebung</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Netzwerk & WLAN -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-wifi fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">Netzwerk & WLAN</h3>
-            <p class="text-muted">
-              Optimale Vernetzung für Ihr Zuhause oder Büro
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>WLAN-Einrichtung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Netzwerk-Optimierung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Sicherheitskonfiguration</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Performance-Analyse</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Software & Betriebssysteme -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-windows fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">Software-Installation</h3>
-            <p class="text-muted">
-              Professionelle Software-Lösungen
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Windows Installation</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Software-Updates</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Treiber-Installation</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Programm-Einrichtung</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Datensicherung -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-shield-check fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">Datensicherung</h3>
-            <p class="text-muted">
-              Sichere Backup-Lösungen
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Backup-Erstellung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Datenrettung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Cloud-Backup</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Automatisierte Sicherung</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Business Solutions -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3">
-              <i class="bi bi-building fs-2 p-3"></i>
-            </div>
-            <h3 class="fs-4 fw-bold">Business Solutions</h3>
-            <p class="text-muted">
-              Maßgeschneiderte Unternehmenslösungen
-            </p>
-            <ul class="list-unstyled text-start">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>IT-Beratung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Systemanalyse</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Prozessoptimierung</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Wartungsverträge</li>
-            </ul>
-          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">PC &amp; Laptop Service</h2>
+          <p class="text-muted" itemprop="description">
+            Wartung, <strong>Windows-Installation</strong>, Fehlerbehebung &amp; <strong>Viren­entfernung</strong>.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Installation &amp; Einrichtung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>System-Optimierung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Backup &amp; Datenrettung</li>
+          </ul>
         </div>
       </div>
     </div>
-  
-    <!-- Call to Action Section -->
-    <div class="text-center mt-5">
-      <p class="lead">Benötigen Sie Unterstützung bei Ihren IT-Anliegen?</p>
-      <a class="btn btn-primary btn-lg" routerLink="/contact">Jetzt Kontakt aufnehmen</a>
+
+    <!-- 2 Website-Entwicklung -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Website-Entwicklung">
+            <i class="bi bi-globe fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Website-Entwicklung</h2>
+          <p class="text-muted" itemprop="description">
+            <strong>Responsive, SEO-optimierte</strong> Webpräsenzen inkl. CMS &amp; Wartung.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Responsive Webdesign</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Schnelle Ladezeiten</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>SEO-Grundoptimierung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>CMS-Integration</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <!-- 3 Smartphone Support -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Smartphone Support">
+            <i class="bi bi-phone fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Smartphone Support</h2>
+          <p class="text-muted" itemprop="description">
+            <strong>Einrichtung neuer Handys</strong>, Daten­übertragung &amp; Hilfe für Senior:innen.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Einrichtung &amp; Konfiguration</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Datenübertragung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Software-Updates</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Problembehebung</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Netzwerk & WLAN -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Netzwerk & WLAN">
+            <i class="bi bi-wifi fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Netzwerk &amp; WLAN</h2>
+          <p class="text-muted" itemprop="description">
+            <strong>WLAN-Optimierung</strong>, Sicherheits­konfiguration &amp; Performance-Tuning.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>WLAN-Einrichtung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Netzwerk-Analyse</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Security-Hardening</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Performance-Boost</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 Software-Installation -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Software-Installation">
+            <i class="bi bi-windows fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Software-Installation</h2>
+          <p class="text-muted" itemprop="description">
+            Fachgerechte <strong>Windows-Neu­installation</strong>, Treiber &amp; Programm-Setup.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Windows-Neuinstallation</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Treiber-Integration</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Software-Updates</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Lizenz-Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 Datensicherung -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Datensicherung">
+            <i class="bi bi-shield-check fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Datensicherung</h2>
+          <p class="text-muted" itemprop="description">
+            Zuverlässige <strong>Backup-Lösungen</strong> &amp; <strong>Daten­rettung</strong> für wichtige Dateien.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Automatisierte Backups</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Cloud-Speicher</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Daten­wiederherstellung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Backup-Strategie</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 Business Solutions -->
+    <div class="col-md-6 col-lg-4" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center p-4">
+          <div class="feature-icon bg-primary text-white rounded-circle mb-3" role="img" aria-label="Business Solutions">
+            <i class="bi bi-building fs-2 p-3"></i>
+          </div>
+          <h2 class="fs-4 fw-bold" itemprop="name">Business Solutions</h2>
+          <p class="text-muted" itemprop="description">
+            <strong>IT-Beratung</strong>, <strong>Systemanalyse</strong> &amp; <strong>Prozess-Optimierung</strong>.
+          </p>
+          <ul class="list-unstyled text-start">
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>IT-Beratung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Prozess-Optimierung</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Wartungsverträge</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Workshops &amp; Schulungen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center mt-5">
+    <p class="lead">Benötigen Sie Unterstützung bei Ihren IT-Anliegen?</p>
+    <a class="btn btn-primary btn-lg" routerLink="/contact" aria-label="Kontaktformular öffnen">
+      Jetzt Kontakt aufnehmen
+    </a>
+  </section>
+
+  <!-- SEO-Footer -->
+  <section class="seo-footer-text mt-5">
+    <p class="text-muted small text-center">
+      IT-Service Kamp-Lintfort · Computerhilfe Geldern · Handy einrichten lassen Goch · IT-Hilfe für Senior:innen ·
+      Netzwerkservice Niederrhein · PC-Reparatur vor Ort · Webseiten-Erstellung · Windows-Support
+    </p>
+  </section>
+
+</main>
