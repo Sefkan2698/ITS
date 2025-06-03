@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:it-services": "node dist/it-services/server/server.mjs"
+    "serve:ssr:it-services": "node dist/it-services/server/server.mjs",
+  "netlify:build": "ng build --configuration production && npx ngx-sitemap --baseUrl=https://www.sakaits.com --outDir=dist/PROJECT_NAME"
+
   },
   "private": true,
   "dependencies": {
@@ -43,6 +45,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-sitemap": "^1.0.0",
     "typescript": "~5.7.2"
   }
 }
