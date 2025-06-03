@@ -1,13 +1,13 @@
-@'
 [build]
-  command = "npm run netlify:build"
-  publish = "dist/it-services"
+  command = "npm run build -- --configuration production"
+  publish = "dist/PROJECT_NAME"      # ersetze PROJECT_NAME durch deinen Build-Ordner
+
 
 [[redirects]]
   from = "/*"
   to   = "/index.html"
   status = 200
-'@ | Set-Content -Path .\netlify.toml
+
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
