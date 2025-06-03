@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.gopik.de/sitemap.xml
-'@ | Set-Content -Path .\src\robots.txt
+'@ 
