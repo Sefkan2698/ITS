@@ -1,6 +1,3 @@
-
-@'
 User-agent: *
 Allow: /
 Sitemap: https://www.gopik.de/sitemap.xml
-'@ 
