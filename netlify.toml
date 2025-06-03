@@ -1,7 +1,7 @@
 @'
 [build]
   command = "npm run build -- --configuration production"
-  publish = "dist/PROJECT_NAME"
+  publish = "dist/it-services"
 
 [[redirects]]
   from = "/*"
