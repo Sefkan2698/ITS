@@ -1,0 +1,10 @@
+@'
+[build]
+  command = "npm run build -- --configuration production"
+  publish = "dist/PROJECT_NAME"
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
+'@ | Set-Content -Path .\netlify.toml
