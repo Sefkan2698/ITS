@@ -1,9 +1,9 @@
 {
   "routes": {
-    "/": {},
-    "/about": {},
-    "/contact": {},
-    "/pricing": {},
-    "/services": {}
+    "/sakaits": {},
+    "/sakaits/about": {},
+    "/sakaits/contact": {},
+    "/sakaits/pricing": {},
+    "/sakaits/services": {}
   }
 }
