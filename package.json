@@ -8,8 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:it-services": "node dist/it-services/server/server.mjs",
-  "netlify:build": "ng build --configuration production && npx ngx-sitemap --baseUrl=https://www.sakaits.com --outDir=dist/PROJECT_NAME"
-
+    "netlify:build": "ng build --configuration production && npx ngx-sitemap --baseUrl=https://www.sakaits.com --outDir=dist/it-services"
   },
   "private": true,
   "dependencies": {
