@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:it-services": "node dist/it-services/server/server.mjs"
+    "serve:ssr:it-services": "node dist/it-services/server/server.mjs",
+        "build": "ng build --configuration production",
+    "postbuild": "node generate-sitemap.mjs"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "angular-cli-ghpages": "^2.0.3",
+    "glob": "^11.0.2",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -45,6 +47,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ngx-sitemap": "^1.0.0",
+    "sitemap": "^8.0.0",
     "typescript": "~5.7.2"
   }
 }

@@ -8,8 +8,3 @@
   to   = "/index.html"
   status = 200
 
-
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
-  [plugins.inputs]
-    canonicalUrl = "https://www.sakaits.com"

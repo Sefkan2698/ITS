@@ -1,43 +1,62 @@
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .timeline-item {
-    position: relative;
-    padding-left: 20px;
-    border-left: 2px solid #007bff;
-  }
-  
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #007bff;
-  }
-  
-  .feature-icon {
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
- /* about.component.css */
-/* about.component.css */
-.profile-image {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* --------------------------------------------------
+   Zusätzliche Gradients (1-4 sind evtl. schon global)
+---------------------------------------------------*/
+.bg-gradient-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-gradient-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.bg-gradient-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.bg-gradient-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+
+/* ----------------------------------------------
+   Timeline (schlanker vertikaler Verlauf)
+----------------------------------------------*/
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: .5rem;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0d6efd 0%, transparent 100%);
+}
+.timeline-item { position: relative; }
+.timeline-dot {
+  position: absolute;
+  left: -.16rem;           /* zentriert auf Linie */
+  top: .35rem;
+  width: .7rem;
+  height: .7rem;
+  background: #0d6efd;
+  border-radius: 50%;
+}
+
+/* ----------------------------------------------
+   3D-Icon-Wrapper & Card-Hover
+   (identisch mit Services / Home)
+----------------------------------------------*/
+.icon-3d {
+  width: 80px; height: 80px;
+  background: rgba(255,255,255,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: transform .3s ease;
+}
+.service-card-modern:hover .icon-3d { transform: rotateY(180deg); }
+
+.service-card-modern {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.service-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+/* ----------------------------------------------
+   Textfarben auf dunklen Karten
+----------------------------------------------*/
+.expertise-card ul li { color: rgba(255,255,255,.85); }

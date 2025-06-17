@@ -1,88 +1,101 @@
-<!-- pricing.component.html -->
-<div class="container py-5">
-    <!-- Header Section -->
-    <div class="text-center mb-5">
-      <h1 class="display-4 fw-bold">Preise & Leistungen</h1>
-      <p class="lead text-secondary">Transparente und faire Preisgestaltung</p>
-    </div>
-  
-    <!-- Main Pricing Section -->
-    <div class="row justify-content-center mb-5">
+<main class="pricing-page py-5">
+
+  <div class="container position-relative z-index-1">
+
+    <!-- Header --------------------------------------------------------->
+    <header class="text-center mb-5">
+      <span class="badge bg-light text-primary mb-3 px-3 py-2">
+        Faire & transparente Konditionen
+      </span>
+
+      <h1 class="display-4 fw-bold animate-fade-in">
+        Preise&nbsp;<span class="text-gradient">&amp; Leistungen</span>
+      </h1>
+      <p class="lead text-secondary">
+        Klare Stundensätze – keine versteckten Kosten
+      </p>
+    </header>
+
+    <!-- Standardtarif --------------------------------------------------->
+    <section class="row justify-content-center mb-5">
       <div class="col-md-8 col-lg-6">
-        <div class="card border-0 shadow-sm">
-          <div class="card-body p-5 text-center">
-            <h2 class="h3 mb-4">Standardtarif</h2>
-            <div class="display-4 fw-bold text-primary mb-3">
-              25€
-              <span class="fs-5 text-secondary">/Stunde</span>
+        <div class="pricing-card service-card-modern h-100 p-5 rounded-4 bg-gradient-2 text-center">
+
+          <div class="icon-wrapper mb-4">
+            <div class="icon-3d">
+              <i class="bi bi-currency-euro text-white fs-1"></i>
             </div>
-            <p class="lead mb-4">
-              Für alle Standard IT-Dienstleistungen wie:
-            </p>
-            <ul class="list-unstyled text-start">
-              <li class="mb-3">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                PC & Laptop Wartung
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                Software-Installation
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                Virenentfernung
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                WLAN-Einrichtung
-              </li>
-            </ul>
           </div>
+
+          <h2 class="h3 text-white mb-4">Standardtarif</h2>
+
+          <div class="display-4 fw-bold text-white mb-3">
+            25&nbsp;€
+            <span class="fs-5 text-white-50">/ Stunde</span>
+          </div>
+
+          <p class="lead text-white-80 mb-4">
+            Für alle Standard-IT-Dienstleistungen wie:
+          </p>
+
+          <ul class="list-unstyled text-white-80">
+            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>PC&nbsp;&amp; Laptop Wartung</li>
+            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Software-Installation</li>
+            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Virenentfernung</li>
+            <li class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i>WLAN-Einrichtung</li>
+          </ul>
         </div>
       </div>
-    </div>
-  
-    <!-- Special Projects Section -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-8 text-center">
-        <h3 class="mb-4">Spezielle Projekte & Unternehmensanfragen</h3>
-        <p class="lead">
-          Für größere Projekte oder spezielle Anforderungen erstelle ich Ihnen gerne ein 
-          individuelles Angebot. In einem persönlichen Gespräch können wir Ihre speziellen 
-          Bedürfnisse besprechen und einen passenden Gesamtpreis festlegen.
-        </p>
-        <a class="btn btn-primary btn-lg mt-3" routerLink="/contact">
-          Kostenloses Beratungsgespräch vereinbaren
-        </a>
-      </div>
-    </div>
-  
-    <!-- Additional Info -->
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card border-0 shadow-sm">
-          <div class="card-body p-4">
-            <h4 class="mb-4">Gut zu wissen:</h4>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <i class="bi bi-info-circle-fill text-primary me-2"></i>
-                Abrechnung erfolgt in 15-Minuten-Takten
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-info-circle-fill text-primary me-2"></i>
-                Anfahrt im Umkreis von 20km kostenlos
-              </li>
-              <li class="mb-3">
-                <i class="bi bi-info-circle-fill text-primary me-2"></i>
-                Fernwartung möglich
-              </li>
-              <li>
-                <i class="bi bi-info-circle-fill text-primary me-2"></i>
-                Kostenvoranschlag für größere Projekte immer kostenlos
-              </li>
-            </ul>
-          </div>
+    </section>
+
+    <!-- Projekte / Business -------------------------------------------->
+    <section class="row justify-content-center mb-5">
+      <div class="col-md-10">
+        <div class="glassmorphism p-5 rounded-4 shadow-lg text-center">
+          <h3 class="h4 mb-4">Spezielle Projekte &amp; Unternehmens­anfragen</h3>
+
+          <p class="lead mb-4">
+            Für größere Projekte oder besondere Anforderungen erstelle ich
+            Ihnen gerne ein individuelles Festpreis-Angebot. In einem
+            persönlichen Gespräch klären wir Ihre Ziele und definieren einen
+            transparenten Gesamtpreis.
+          </p>
+
+          <a class="btn btn-primary btn-lg rounded-pill px-4 shadow-hover"
+             routerLink="/contact">
+            Kostenloses Beratungsgespräch vereinbaren
+          </a>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Zusatzinfos ----------------------------------------------------->
+    <section class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="info-card glassmorphism p-4 rounded-4 shadow-sm">
+          <h4 class="mb-4">Gut zu wissen</h4>
+
+          <ul class="list-unstyled mb-0">
+            <li class="mb-3">
+              <i class="bi bi-info-circle-fill text-primary me-2"></i>
+              Abrechnung in 15-Minuten-Taktung
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-info-circle-fill text-primary me-2"></i>
+              Anfahrt im Umkreis von 20 km kostenlos
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-info-circle-fill text-primary me-2"></i>
+              Fernwartung jederzeit möglich
+            </li>
+            <li class="mb-0">
+              <i class="bi bi-info-circle-fill text-primary me-2"></i>
+              Kostenvoranschläge für Projekte gratis
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </div>
+</main>

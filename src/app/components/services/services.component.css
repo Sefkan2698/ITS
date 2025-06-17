@@ -19,3 +19,15 @@
   .list-unstyled li {
     margin-bottom: 0.5rem;
   }
+
+  /* -------- Zusatz-Gradienten -------- */
+.bg-gradient-5 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+.bg-gradient-6 { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+.bg-gradient-7 { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
+
+/* Damit Listeneinträge auf dunklen Karten gut lesbar bleiben */
+.service-card-modern ul li i { color: #4ade80; }       /* grün wie auf Home */
+.service-card-modern ul li { color: rgba(255,255,255,.85); }
+
+/* Badge & Lead-Text auf dunklem Hintergrund anpassen */
+.services-page .lead { color: rgba(255,255,255,.8); }

@@ -1,114 +1,261 @@
 <!-- home.component.html -->
-<div class="hero-section py-5 bg-primary text-white">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="display-4">Professionelle IT-Hilfe</h1>
-          <p class="lead">Für Privatpersonen & Unternehmen</p>
-          <a class="btn btn-light btn-lg" routerLink="/contact">Jetzt anfragen</a>
+<!-- Hero Section mit animiertem Hintergrund (kein Video mehr) -->
+<div class="hero-section position-relative overflow-hidden">
+  <!-- Animierter Hintergrund (CSS-Keyframes oder Lottie–Animation → siehe styles.scss) -->
+  <div class="hero-animated-bg position-absolute top-0 start-0 w-100 h-100"></div>
+
+  <div class="container hero-content position-relative z-index-1">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-7">
+        <span class="badge bg-light text-primary mb-3 px-3 py-2">IT-Service Kleve • Goch • Kamp-Lintfort</span>
+        <h1 class="display-3 fw-bold mb-4 animate-fade-in">
+          Ihre digitale Zukunft<br>
+          <span class="text-gradient">beginnt hier</span>
+        </h1>
+        <p class="lead mb-4 text-white-80">
+          Professionelle IT-Lösungen für Privatpersonen und Unternehmen.
+          Von der PC-Reparatur bis zur digitalen Transformation.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a class="btn btn-light btn-lg rounded-pill px-4 shadow-hover" routerLink="/contact">
+            <i class="bi bi-chat-dots me-2"></i>Kostenlose Beratung
+          </a>
+          <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="#services">
+            <i class="bi bi-arrow-down me-2"></i>Services entdecken
+          </a>
         </div>
-        <div class="col-lg-6 d-flex justify-contend-end">
-          <!-- Hier können wir später ein Bild einfügen -->
-          <img 
-          [src]="'/assets/Saka_IT_Solution.png'"
-          alt="Saka IT-Solutions Logo" 
-          class="hero-logo"
-          style="max-width: 200px; /* oder Ihre gewünschte Größe */"
-                 
-        >
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators mt-5">
+          <div class="row g-4">
+            <div class="col-auto">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-clock-history text-white fs-4 me-2"></i>
+                <span class="text-white-80">24h Notfall-Support</span>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-shield-check text-white fs-4 me-2"></i>
+                <span class="text-white-80">Zertifizierter Partner</span>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt text-white fs-4 me-2"></i>
+                <span class="text-white-80">Vor Ort Service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 text-center">
+        <div class="floating-logo">
+          <img
+            src="/assets/Saka_IT_Solution.png"
+            alt="Saka IT-Solutions - IT-Service Kleve, Goch, Kamp-Lintfort"
+            class="hero-logo glow-effect"
+          />
         </div>
       </div>
     </div>
   </div>
-  
-  <section class="seo-intro py-4">
+
+  <!-- Animated scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SEO-optimierte Einleitung -->
+<section class="seo-intro py-5 bg-light-gradient">
   <div class="container">
-    <p class="lead text-center">
-      <strong>Saka IT-Solutions</strong> bietet persönliche und professionelle <strong>IT-Dienstleistungen in Kamp-Lintfort, Geldern, Goch</strong> und Umgebung. Ob <strong>PC-Reparatur</strong>, <strong>Smartphone-Einrichtung</strong>, <strong>IT-Hilfe für Senioren</strong> oder <strong>Netzwerkprobleme</strong> – wir sind Ihr zuverlässiger Partner für schnelle Hilfe vor Ort. Auch <strong>kleine Unternehmen und Praxen</strong> profitieren von unserer Erfahrung in <strong>IT-Beratung</strong> und <strong>Website-Erstellung</strong>.
-    </p>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="text-box glassmorphism p-5 rounded-4 shadow-lg">
+          <h2 class="h3 text-center mb-4">IT-Service für Kleve, Goch und Kamp-Lintfort</h2>
+          <p class="lead text-center mb-0">
+            <strong>Saka IT-Solutions</strong> ist Ihr persönlicher IT-Dienstleister im Kreis Kleve.
+            Wir bieten professionelle <strong>Computer-Reparatur</strong>, <strong>Smartphone-Support</strong>,
+            <strong>Netzwerk-Lösungen</strong> und <strong>Website-Entwicklung</strong> für Privatpersonen,
+            Senioren und Unternehmen. Mit über 10 Jahren Erfahrung lösen wir Ihre IT-Probleme schnell und zuverlässig –
+            direkt vor Ort oder per Fernwartung.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-  <section class="services-overview py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Meine Dienstleistungen</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <!-- PC & Laptop Service -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-laptop text-primary fs-1 mb-3"></i>
-              <h5 class="card-title">PC & Laptop Service</h5>
-              <p class="card-text">Installation, Einrichtung, Fehlerbehebung und Virenentfernung</p>
+<!-- Spezialisierte Services Section -->
+<section id="services" class="services-specialized py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-gradient mb-3 px-3 py-2">Unsere Expertise</span>
+      <h2 class="display-5 fw-bold mb-3">Spezialisierte IT-Lösungen</h2>
+      <p class="lead text-muted">Maßgeschneiderte Services für Ihre digitalen Herausforderungen</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Webentwicklung (NEW) -->
+      <div class="col-lg-6">
+        <div class="service-card-modern h-100 p-4 rounded-4 bg-gradient-1">
+          <div class="icon-wrapper mb-4">
+            <div class="icon-3d">
+              <i class="bi bi-code-slash text-white fs-1"></i>
             </div>
           </div>
+          <h3 class="h4 text-white mb-3">Webentwicklung</h3>
+          <p class="text-white-80 mb-4">
+            Moderne, schnelle und suchmaschinenoptimierte Websites – von WordPress bis zur maßgeschneiderten Lösung.
+          </p>
+          <ul class="list-unstyled text-white-80">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>WordPress&nbsp;Website&nbsp;Entwicklung</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Handgecodete&nbsp;Website</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>SEO‑Optimierung</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Niedrige&nbsp;Wartungskosten</li>
+          </ul>
+          <a href="#" class="btn btn-light btn-sm rounded-pill mt-3">
+            Mehr erfahren <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
-  
-        <!-- Smartphone Support -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-phone text-primary fs-1 mb-3"></i>
-              <h5 class="card-title">Smartphone Support</h5>
-              <p class="card-text">Einrichtung, Datenübertragung und Problemlösungen</p>
+      </div>
+
+      <!-- Cloud Migration & Management (unchanged) -->
+      <div class="col-lg-6">
+        <div class="service-card-modern h-100 p-4 rounded-4 bg-gradient-2">
+          <div class="icon-wrapper mb-4">
+            <div class="icon-3d">
+              <i class="bi bi-cloud-arrow-up-fill text-white fs-1"></i>
             </div>
           </div>
+          <h3 class="h4 text-white mb-3">Cloud Migration &amp; Management</h3>
+          <p class="text-white-80 mb-4">
+            Nahtlose Migration Ihrer IT-Infrastruktur in die Cloud. Optimale Performance und Kosteneffizienz garantiert.
+          </p>
+          <ul class="list-unstyled text-white-80">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Microsoft&nbsp;365&nbsp;&amp;&nbsp;Azure Setup</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cloud‑Backup&nbsp;Strategien</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hybrid‑Cloud&nbsp;Lösungen</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>24/7&nbsp;Cloud&nbsp;Monitoring</li>
+          </ul>
+          <a href="#" class="btn btn-light btn-sm rounded-pill mt-3">
+            Mehr erfahren <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
-  
-        <!-- Netzwerk & WLAN -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-wifi text-primary fs-1 mb-3"></i>
-              <h5 class="card-title">Netzwerk & WLAN</h5>
-              <p class="card-text">Optimale Vernetzung für Ihr Zuhause oder Büro</p>
+      </div>
+
+      <!-- Hardware Reparatur (NEW – replaces Digitalisierung KMU) -->
+      <div class="col-lg-6">
+        <div class="service-card-modern h-100 p-4 rounded-4 bg-gradient-3">
+          <div class="icon-wrapper mb-4">
+            <div class="icon-3d">
+              <i class="bi bi-wrench-adjustable-circle-fill text-white fs-1"></i>
             </div>
           </div>
+          <h3 class="h4 text-white mb-3">Hardware&nbsp;Reparatur</h3>
+          <p class="text-white-80 mb-4">
+            Schnelle Diagnose und Reparatur Ihrer Hardware – vom Notebook bis zum Server.
+          </p>
+          <ul class="list-unstyled text-white-80">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Notfall‑Support</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Festplatten‑ &amp;&nbsp;Netzteilaustausch</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Überhitzungs‑ &amp;&nbsp;Lüfterprobleme</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Allgemeine&nbsp;PC‑Probleme</li>
+          </ul>
+          <a href="#" class="btn btn-light btn-sm rounded-pill mt-3">
+            Mehr erfahren <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
-  
-        <!-- Website-Entwicklung -->
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body text-center">
-              <i class="bi bi-globe text-primary fs-1 mb-3"></i>
-              <h5 class="card-title">Website-Entwicklung</h5>
-              <p class="card-text">Entwicklung moderner und professioneller Webseiten</p>
+      </div>
+
+      <!-- IT-Support Premium (unchanged) -->
+      <div class="col-lg-6">
+        <div class="service-card-modern h-100 p-4 rounded-4 bg-gradient-4">
+          <div class="icon-wrapper mb-4">
+            <div class="icon-3d">
+              <i class="bi bi-headset text-white fs-1"></i>
             </div>
           </div>
+          <h3 class="h4 text-white mb-3">Premium&nbsp;IT‑Support</h3>
+          <p class="text-white-80 mb-4">
+            Rundum‑sorglos‑Paket für Ihre IT. Proaktive Wartung, schnelle Hilfe bei Problemen, persönliche Betreuung.
+          </p>
+          <ul class="list-unstyled text-white-80">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>24/7&nbsp;Notfall‑Hotline</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Proaktives&nbsp;Monitoring</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Regelmäßige&nbsp;Wartung</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Persönlicher&nbsp;IT‑Berater</li>
+          </ul>
+          <a href="#" class="btn btn-light btn-sm rounded-pill mt-3">
+            Mehr erfahren <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  
-  <!-- Zusätzliche Features oder Call-to-Action Section -->
-  <section class="features py-5 bg-light">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <i class="bi bi-clock text-primary fs-1 mb-3"></i>
-          <h3 class="h5">Schnelle Hilfe</h3>
-          <p>Zeitnahe Bearbeitung Ihrer Anfragen</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <i class="bi bi-shield-check text-primary fs-1 mb-3"></i>
-          <h3 class="h5">Professionell & Zuverlässig</h3>
-          <p>Qualifizierte IT-Dienstleistungen</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <i class="bi bi-geo-alt text-primary fs-1 mb-3"></i>
-          <h3 class="h5">Vor Ort Service</h3>
-          <p>Im Umkreis von 20km um Goch</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Call to Action -->
- <!-- Call to Action Section -->
-<section class="cta py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Benötigen Sie IT-Unterstützung?</h2>
-    <p class="lead mb-4">Ich helfe Ihnen gerne bei allen IT-Fragen und Problemen.</p>
-    <a class="btn btn-primary btn-lg" routerLink="/contact">Jetzt Kontakt aufnehmen</a>
   </div>
 </section>
+
+<!-- Die restlichen Abschnitte (Features, CTA, Scripts) bleiben unverändert -->
+
+
+<!-- Modern CTA Section -->
+<section class="cta-modern py-5">
+  <div class="container">
+    <div class="cta-card rounded-4 p-5 text-center position-relative overflow-hidden">
+      <div class="cta-bg-animation"></div>
+      <div class="position-relative z-index-1">
+        <h2 class="display-5 fw-bold text-white mb-3">Bereit für die digitale Zukunft?</h2>
+        <p class="lead text-white-80 mb-4">
+          Lassen Sie uns gemeinsam Ihre IT-Herausforderungen meistern. 
+          Kostenlose Erstberatung für Neukunden!
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a class="btn btn-white btn-lg rounded-pill px-4 shadow-hover" routerLink="/contact">
+            <i class="bi bi-calendar-check me-2"></i>Termin vereinbaren
+          </a>
+          <a class="btn btn-outline-white btn-lg rounded-pill px-4" href="tel:+491741928943">
+            <i class="bi bi-telephone me-2"></i>+491741928943
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+ 
+// Counter Animation
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+counters.forEach(counter => {
+  const animate = () => {
+    const value = +counter.getAttribute('data-target');
+    const data = +counter.innerText;
+    const time = value / speed;
+    
+    if (data < value) {
+      counter.innerText = Math.ceil(data + time);
+      setTimeout(animate, 1);
+    } else {
+      counter.innerText = value;
+    }
+  }
+  
+  // Start animation when element is in viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animate();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  observer.observe(counter);
+});
+</script>

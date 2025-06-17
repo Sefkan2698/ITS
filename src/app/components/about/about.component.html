@@ -1,108 +1,138 @@
-<!-- about.component.html -->
-<div class="container py-5">
-    <!-- Header Section -->
-    <div class="row mb-5">
-      <div class="col-lg-8 mx-auto text-center">
-        <h1 class="display-4 fw-bold">Über Mich</h1>
-        <p class="lead text-secondary">Fachinformatiker für Systemintegration mit Leidenschaft für IT-Lösungen</p>
-      </div>
-    </div>
-  
- <!-- Profile Section -->
-<div class="row align-items-center mb-5">
-  <div class="col-lg-12 text-center"> <!-- Änderung hier: volle Breite und zentriert -->
-    <h2 class="mb-4">Ihre IT ist bei mir in guten Händen</h2>
-    <p class="lead mb-4">Als erfahrener Fachinformatiker biete ich professionelle IT-Dienstleistungen für Privatpersonen und Unternehmen an.</p>
-    <div class="d-flex justify-content-center mb-4"> <!-- Zentrierte Liste -->
-      <ul class="list-unstyled text-start">
-        <li class="mb-3">
-          <i class="bi bi-check-circle-fill text-primary me-2"></i>
-          Mehrjährige Erfahrung in der IT-Branche
-        </li>
-        <li class="mb-3">
-          <i class="bi bi-check-circle-fill text-primary me-2"></i>
-          Individuelle Lösungen für Ihre IT-Probleme
-        </li>
-        <li class="mb-3">
-          <i class="bi bi-check-circle-fill text-primary me-2"></i>
-          Flexible Termine und schnelle Reaktionszeiten
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
- 
-  
- <!-- Expertise Section in about.component.html -->
-<div class="row mb-5">
-    <div class="col-12 text-center mb-4">
-      <h2>Meine Expertise</h2>
-    </div>
-    <!-- Hardware -->
-    <div class="col-md-3 mb-4">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body text-center p-4">
-          <i class="bi bi-pc-display text-primary fs-1 mb-3"></i>
-          <h3 class="h4">Hardware</h3>
-          <ul class="list-unstyled text-start">
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> PC-Systeme</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Notebooks</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Netzwerktechnik</li>
-            <li><i class="bi bi-arrow-right-short text-primary"></i> Peripheriegeräte</li>
+<main class="about-page py-5">
+
+  <div class="container">
+
+    <!-- Header ---------------------------------------------------------->
+    <header class="text-center mb-5">
+      <span class="badge bg-light text-primary mb-3 px-3 py-2">
+        Saka IT-Solutions – Fachinformatiker
+      </span>
+
+      <h1 class="display-4 fw-bold animate-fade-in">
+        Über&nbsp;<span class="text-gradient">mich</span>
+      </h1>
+      <p class="lead text-secondary">
+        Fachinformatiker für Systemintegration – mit Leidenschaft für individuelle IT-Lösungen
+      </p>
+    </header>
+
+    <!-- Intro / USP ----------------------------------------------------->
+    <section class="profile-highlight glassmorphism p-5 rounded-4 shadow-lg mb-5">
+      <h2 class="h3 text-center mb-4">Ihre IT ist bei mir in guten Händen</h2>
+
+      <p class="lead text-center mb-4">
+        Als erfahrener Fachinformatiker biete ich professionelle IT-Dienstleistungen
+        für Privatpersonen und Unternehmen rund um den Niederrhein an.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Mehrjährige Erfahrung in der IT-Branche
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Individuelle Lösungen für komplexe IT-Probleme
+            </li>
+            <li class="mb-0">
+              <i class="bi bi-check-circle-fill text-success me-2"></i>
+              Flexible Termine &amp; schnelle Reaktionszeiten
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  
-    <!-- Software -->
-    <div class="col-md-3 mb-4">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body text-center p-4">
-          <i class="bi bi-windows text-primary fs-1 mb-3"></i>
-          <h3 class="h4">Software</h3>
-          <ul class="list-unstyled text-start">
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Windows</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Linux</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Office-Anwendungen</li>
-            <li><i class="bi bi-arrow-right-short text-primary"></i> Antivirenprogramme</li>
-          </ul>
+    </section>
+
+    <!-- Expertise ------------------------------------------------------->
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Meine&nbsp;Expertise</h2>
+
+      <div class="row g-4">
+
+        <!-- Hardware -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="expertise-card service-card-modern h-100 p-4 rounded-4 bg-gradient-1">
+            <div class="icon-wrapper mb-4">
+              <div class="icon-3d">
+                <i class="bi bi-pc-display text-white fs-1"></i>
+              </div>
+            </div>
+
+            <h3 class="h5 text-white mb-3">Hardware</h3>
+            <ul class="list-unstyled text-white-80">
+              <li class="mb-2">PC-Systeme</li>
+              <li class="mb-2">Notebooks</li>
+              <li class="mb-2">Netzwerktechnik</li>
+              <li>Peripheriegeräte</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-  
-    <!-- Netzwerk -->
-    <div class="col-md-3 mb-4">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body text-center p-4">
-          <i class="bi bi-hdd-network text-primary fs-1 mb-3"></i>
-          <h3 class="h4">Netzwerk</h3>
-          <ul class="list-unstyled text-start">
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> WLAN-Einrichtung</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Netzwerksicherheit</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> VPN-Lösungen</li>
-            <li><i class="bi bi-arrow-right-short text-primary"></i> Router-Konfiguration</li>
-          </ul>
+
+        <!-- Software -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="expertise-card service-card-modern h-100 p-4 rounded-4 bg-gradient-2">
+            <div class="icon-wrapper mb-4">
+              <div class="icon-3d">
+                <i class="bi bi-windows text-white fs-1"></i>
+              </div>
+            </div>
+
+            <h3 class="h5 text-white mb-3">Software</h3>
+            <ul class="list-unstyled text-white-80">
+              <li class="mb-2">Windows &amp; Linux</li>
+              <li class="mb-2">Office-Anwendungen</li>
+              <li>Antivirenprogramme</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-  
-    <!-- Webentwicklung NEU -->
-    <div class="col-md-3 mb-4">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body text-center p-4">
-          <i class="bi bi-globe text-primary fs-1 mb-3"></i>
-          <h3 class="h4">Webentwicklung</h3>
-          <ul class="list-unstyled text-start">
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Responsive Design</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Angular</li>
-            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Bootstrap</li>
-            <li><i class="bi bi-arrow-right-short text-primary"></i> HTML/CSS/JavaScript</li>
-          </ul>
+
+        <!-- Netzwerk -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="expertise-card service-card-modern h-100 p-4 rounded-4 bg-gradient-3">
+            <div class="icon-wrapper mb-4">
+              <div class="icon-3d">
+                <i class="bi bi-hdd-network text-white fs-1"></i>
+              </div>
+            </div>
+
+            <h3 class="h5 text-white mb-3">Netzwerk</h3>
+            <ul class="list-unstyled text-white-80">
+              <li class="mb-2">WLAN-Einrichtung</li>
+              <li class="mb-2">Netzwerksicherheit</li>
+              <li class="mb-2">VPN-Lösungen</li>
+              <li>Router-Konfiguration</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Webentwicklung -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="expertise-card service-card-modern h-100 p-4 rounded-4 bg-gradient-4">
+            <div class="icon-wrapper mb-4">
+              <div class="icon-3d">
+                <i class="bi bi-globe text-white fs-1"></i>
+              </div>
+            </div>
+
+            <h3 class="h5 text-white mb-3">Webentwicklung</h3>
+            <ul class="list-unstyled text-white-80">
+              <li class="mb-2">Responsive Design</li>
+              <li class="mb-2">Wordpress</li>
+              <li class="mb-2">SEO-Optimierung</li>
+              <li class="mb-2">Angular &amp; Bootstrap</li>
+              <li>HTML&nbsp;/ CSS&nbsp;/ JS</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
-    <!-- Education & Certificates -->
+    </section>
+
+    <!-- Ausbildung / Zertifikate --------------------------------------->
+    <section class="mb-5 text-center">
+          <!-- Education & Certificates -->
     <div class="row mb-5">
       <div class="col-12 text-center mb-4">
         <h2>Ausbildung</h2>
@@ -128,10 +158,25 @@
       </div>
      
     </div>
-  
-    <!-- Call to Action -->
-    <div class="text-center">
-      <p class="lead mb-4">Haben Sie Fragen oder benötigen Sie Unterstützung?</p>
-      <a class="btn btn-primary btn-lg" routerLink="/contact">Kontaktieren Sie mich</a>
-    </div>
+    </section>
+
+    <!-- CTA ------------------------------------------------------------->
+    <section class="cta-modern">
+      <div class="cta-card rounded-4 p-5 text-center position-relative overflow-hidden">
+        <div class="cta-bg-animation"></div> <!-- nutzt dieselbe Animation wie Home; wenn du das vermeiden willst, bg einfach entfernen -->
+
+        <div class="position-relative z-index-1">
+          <h2 class="display-6 fw-bold text-white mb-3">
+            Haben Sie Fragen oder benötigen Sie Unterstützung?
+          </h2>
+
+          <a class="btn btn-white btn-lg rounded-pill px-4 shadow-hover"
+             routerLink="/contact">
+            <i class="bi bi-chat-dots me-2"></i>Kontaktieren Sie mich
+          </a>
+        </div>
+      </div>
+    </section>
+
   </div>
+</main>

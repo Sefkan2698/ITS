@@ -1,0 +1,40 @@
+/* Host komplett ausblenden, wenn Klasse gesetzt wurde */
+app-cookie-banner.cookie-hidden {
+  display: none !important;
+}
+
+/* === Backdrop (über gesamte Viewport-Fläche) === */
+.cookie-backdrop {
+  position: fixed !important;   /* ← verhindert Mitscrollen */
+  inset: 0 !important;          /* top:0; right:0; bottom:0; left:0 */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2147483647;          /* höher als alles andere */
+}
+
+/* === Bannerbox === */
+.cookie-box {
+  max-width: 28rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  background: #ebf3f3;          /* var(--cookie-bg) */
+  color: #1480ff;               /* var(--cookie-text) */
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-box button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background: #ebf3f3;          /* var(--cookie-accent) */
+  color: #1480ff;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+.cookie-box button:hover  { transform: scale(1.04); }
+.cookie-box button:active { transform: scale(0.96); }

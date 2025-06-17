@@ -6,3 +6,39 @@
     transform: translateY(-5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
   }
+  /* ---------- Pricing Card nutzt vorhandene Utilities ---------- */
+.pricing-card ul li i { color: #4ade80; }              /* Häkchen-Grün */
+.pricing-card ul li   { color: rgba(255,255,255,.85); }
+
+/* ---------- Info-Card Hover (gleicher Effekt wie Cards) ------ */
+.info-card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+/* ---------- Falls Gradients 1-4 global fehlen ---------------- */
+.bg-gradient-1 { background: linear-gradient(135deg,#667eea 0%,#764ba2 100%); }
+.bg-gradient-2 { background: linear-gradient(135deg,#f093fb 0%,#f5576c 100%); }
+.bg-gradient-3 { background: linear-gradient(135deg,#4facfe 0%,#00f2fe 100%); }
+.bg-gradient-4 { background: linear-gradient(135deg,#43e97b 0%,#38f9d7 100%); }
+
+/* ---------- Icon-Wrapper & Card Hover (falls nicht global) ---- */
+.icon-3d {
+  width: 80px; height: 80px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.2);
+  border-radius: 20px;
+  transition: transform .3s ease;
+}
+.service-card-modern:hover .icon-3d { transform: rotateY(180deg); }
+
+.service-card-modern {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.service-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}

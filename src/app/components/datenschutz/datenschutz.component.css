@@ -1,0 +1,13 @@
+/* privacy.component.scss oder global */
+
+#privacy-policy header {
+  /* Header toppig zentrieren (hast du schon) */
+  text-align: center;
+}
+
+#privacy-policy .glassmorphism h2,
+#privacy-policy .glassmorphism h3 {
+  /* Überschriften in der Box linksbündig lassen
+     – nimm text-align:center; falls du ALLES zentrieren willst */
+  text-align: left;
+}

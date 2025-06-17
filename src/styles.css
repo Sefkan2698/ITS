@@ -22,3 +22,53 @@
   .social-icons a:hover {
     color: #007bff !important;
   }
+
+  /* -------------------------------------------------
+   Gradients 1-4 (wurden bisher nur in der Home-SCSS
+   definiert, fehlen also auf der Services-Seite)
+--------------------------------------------------*/
+.bg-gradient-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-gradient-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.bg-gradient-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.bg-gradient-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+
+/* Icon-Wrapper + Card-Hover (falls ebenfalls noch nicht global) */
+.icon-3d {
+  width: 80px; height: 80px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 20px;
+  transition: transform .3s ease;
+}
+.service-card-modern:hover .icon-3d { transform: rotateY(180deg); }
+
+.service-card-modern {
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.service-card-modern:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+/* falls du den animierten Hintergrund auf der Seite nutzt */
+.hero-animated-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(120deg,#7f00ff 0%,#e100ff 25%,#00c3ff 50%,#ff6d00 75%,#7f00ff 100%);
+  background-size: 800% 800%;
+  filter: blur(60px) opacity(.7);
+  animation: heroGradientMove 16s ease-in-out infinite;
+}
+@keyframes heroGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+:root {
+    /* 🎨  Replace these three variables with your brand colors */
+    --cookie-bg: ##0065dd;       /* banner background */
+    --cookie-text: ##ebf3f3;     /* regular text */
+    --cookie-accent: ##1480ff;   /* button background */
+  }
