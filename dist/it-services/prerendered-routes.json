@@ -1,11 +1,11 @@
 {
   "routes": {
-    "/": {},
-    "/about": {},
-    "/contact": {},
-    "/datenschutz": {},
-    "/impressum": {},
-    "/pricing": {},
-    "/services": {}
+    "/sakaits": {},
+    "/sakaits/about": {},
+    "/sakaits/contact": {},
+    "/sakaits/datenschutz": {},
+    "/sakaits/impressum": {},
+    "/sakaits/pricing": {},
+    "/sakaits/services": {}
   }
 }
