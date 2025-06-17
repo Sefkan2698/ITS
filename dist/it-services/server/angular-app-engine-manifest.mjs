@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/sakaits',
+  basePath: '/ITS',
   supportedLocales: {
   "en-US": ""
 },
