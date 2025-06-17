@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -8,7 +8,6 @@ import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.comp
 @Component({
   selector: 'app-root',
   standalone: true,
-  // ⬇️  CookieBannerComponent jetzt mit in den Imports
   imports: [
     RouterOutlet,
     HeaderComponent,
@@ -24,9 +23,13 @@ import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.comp
     <app-cookie-banner></app-cookie-banner>
   `
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  constructor(private titleService: Title, private metaService: Meta) {
+  constructor(
+    private titleService: Title, 
+    private metaService: Meta,
+    private router: Router
+  ) {
     this.titleService.setTitle(
       'IT-Service Kleve, Goch | Saka IT-Solutions – PC & Handy Hilfe'
     );
@@ -35,6 +38,15 @@ export class AppComponent {
       name: 'description',
       content:
         'IT-Service in Kleve, Goch und Kamp-Lintfort – PC-Reparatur, Handyhilfe & IT-Schulungen für Senioren. Persönlich, zuverlässig & vor Ort.'
+    });
+  }
+
+  ngOnInit() {
+    // Scrolle bei jeder Navigation nach oben
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
     });
   }
 }
