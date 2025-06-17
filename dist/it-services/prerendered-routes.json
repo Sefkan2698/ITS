@@ -1,11 +1,11 @@
 {
   "routes": {
-    "/ITS": {},
-    "/ITS/about": {},
-    "/ITS/contact": {},
-    "/ITS/datenschutz": {},
-    "/ITS/impressum": {},
-    "/ITS/pricing": {},
-    "/ITS/services": {}
+    "/": {},
+    "/about": {},
+    "/contact": {},
+    "/datenschutz": {},
+    "/impressum": {},
+    "/pricing": {},
+    "/services": {}
   }
 }

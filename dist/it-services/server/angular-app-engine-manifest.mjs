@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/ITS',
+  basePath: '/',
   supportedLocales: {
   "en-US": ""
 },
