@@ -3,7 +3,7 @@ export default `<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>Saka IT-Solutions</title>
-  <base href="/sakaits/">
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   
@@ -18,9 +18,9 @@ export default `<!DOCTYPE html>
   
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="/sakaits/styles-X477IOW3.css"></head>
+<link rel="stylesheet" href="/styles-X477IOW3.css"></head>
 <body><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
 </script>
   <app-root></app-root>
-<script src="/sakaits/polyfills-FFHMD2TL.js" type="module"></script><script src="/sakaits/scripts-CV4GDUE4.js" defer=""></script><script src="/sakaits/main-6KDSSHEY.js" type="module"></script></body>
+<script src="/polyfills-FFHMD2TL.js" type="module"></script><script src="/scripts-CV4GDUE4.js" defer=""></script><script src="/main-6KDSSHEY.js" type="module"></script></body>
 </html>`;
